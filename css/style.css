@@ -1,0 +1,57 @@
+body{
+    animation: backmove 5s linear 0s infinite;
+    -moz-animation: backmove 5s linear 0s infinite;
+    -webkit-animation: backmove 5s linear 0s infinite;
+    background:#000 url(../img/bg.jpg) repeat-x;
+    background-size: auto 100vh;
+    height:100vh;
+    margin:0;
+}
+
+#container{
+    overflow:hidden;
+    position:relative;
+    top: 10vh;
+    left: 40vw;
+    height:13.05vw;
+    width: 25.044vw;
+}
+
+#plane{
+    background:url(../img/plane.png) no-repeat;
+    background-size:25vw;
+    height:100%;
+    width: auto;
+    position: relative;
+}
+
+#blade{
+    animation: blader 0.3s linear 0s infinite;
+    -moz-animation: blader 0.3s linear 0s infinite;
+    -webkit-animation: blader 0.3s linear 0s infinite;
+    background:url(../img/blade.png) no-repeat;
+    background-size:1vw;
+    height: 61.3%;
+    width: auto;
+    position: relative;
+    top: -11.05vw;
+    left: 0.15vw;
+}
+
+@keyframes blader{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform:rotateX(360deg);
+    }
+}
+
+@keyframes backmove{
+    0%{
+        background-position: 0vh;
+    }
+    100%{
+        background-position:277.20vh;
+    }
+}
