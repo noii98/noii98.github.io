@@ -1,9 +1,10 @@
 body{
-    animation: backmove 5s linear 0s infinite;
-    -moz-animation: backmove 5s linear 0s infinite;
-    -webkit-animation: backmove 5s linear 0s infinite;
+/*    animation: backmove 15s linear 0s infinite;
+    -moz-animation: backmove 15s linear 0s infinite;
+    -webkit-animation: backmove 15s linear 0s infinite;
     background:#000 url(../img/bg.jpg) repeat-x;
     background-size: auto 100vh;
+*/
     height:100vh;
     margin:0;
 }
@@ -55,3 +56,30 @@ body{
         background-position:277.20vh;
     }
 }
+
+.bg{
+    overflow-x:hidden;
+    position: absolute;
+    left: -277.20vh;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	background: url(../img/bg.jpg) 0% 0% repeat-x;
+    z-index: -1;
+    background-size: auto 100vh;
+    -webkit-animation-name: MOVE-BG;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+  @-webkit-keyframes MOVE-BG {
+    from {
+      -webkit-transform: translateX(0vh);
+    }
+    to { 
+      -webkit-transform: translateX(277.20vh);
+    }
+ }
+ 
