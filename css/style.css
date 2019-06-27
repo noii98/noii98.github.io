@@ -53,9 +53,9 @@ body{
 	background: url(../img/bg.jpg) 0% 0% repeat-x;
     z-index: -1;
     background-size: auto 100vh;
-    animation: bgmove 5s linear 0s infinite;
-    -moz-animation: bgmove 5s linear 0s infinite;
-    -webkit-animation: bgmove 5s linear 0s infinite;
+    animation: bgmove 10s linear 0s infinite;
+    -moz-animation: bgmove 12s linear 0s infinite;
+    -webkit-animation: bgmove 12s linear 0s infinite;
 }
 
 .bg-container{
